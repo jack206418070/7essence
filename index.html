@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="format-detection" content="telephone=no">
+<meta content="width=640,user-scalable=no" name="viewport">
+
+<title>7 essential 七香波 靈感輪盤</title>
+
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="js/jQuery.md5.js"></script>
+<script type="text/javascript">
+	var moneyVal = 30;
+	var mm = '';
+	var tt = '';
+	var cc = '';
+
+	$(function(){
+		var $plateBtn = $('#plateBtn');
+		var $result = $('#result');
+		var $resultTxt = $('#resultTxt');
+		var $resultBtn = $('#resultBtn');
+
+		$plateBtn.click(function(){
+			var data = [0, 1, 2, 3, 4, 5, 6];
+			data = data[Math.floor(Math.random()*data.length)];
+			switch(data){
+				case 1:
+          moneyVal = 100;
+					mm = '七';
+					tt = '頂輪';
+					pp = '<p><b>「頂輪」</b> 主管靈性、連接宇宙和更高智慧的中心，是靈性之源，如果您最近感受思考受限、不願接受新事物，使用我們含六種精油：大馬士革玫瑰、天竺葵、東印度檀木、香草、真正薰衣草和苦橙葉的洗髮香波（Shampoo），可以幫助您感覺到與內在靈性提升、感受更高層次的自我覺醒。</p> <ul><li><b id="bnu">大馬士革玫瑰</b> 有助於提高內在平和，促進內在和外在的和諧。</li><li><b id="bnu">天竺葵</b> 具有平和和潔淨的能量，能幫助您提高內在平靜。</li><li><b id="bnu">東印度檀木</b> 是一種強大的冥想香氣，有助於提升靈感、智慧。</li><li><b id="bnu">香草</b> 帶來安定和平靜，有助於深化冥想。</li><li><b id="bnu">真正薰衣草</b> 是一種舒緩平靜的香氣，有助於深化冥想、提高內在平和。</li><li><b id="bnu">苦橙葉</b> 能夠幫助您深化冥想、提高內在平和。</li></ul><br><br><a href="#" onclick="generateImage(6)"></a>';
+					cc = 'item-seven';
+          rotateFunc(100,0,'');
+					break;
+				case 2:
+          moneyVal = 500;
+					mm = '六';
+					tt = '眉心輪';
+					pp = '<p><b>「眉心輪」</b> 主管直覺、洞察力、創造力和靈感，是內在智慧之源，如果您最近常感覺創意停滯、需要依賴他人提供答案，使用我們含六種精油：薄荷、迷迭香、香膠冷杉、甜橙、佛手柑和杜松果的洗髮香波（Shampoo），可以幫助您提高洞察力、智慧和判斷力。</p> <ul><li><b id="bnu">薄荷</b> 帶有鼓舞的能量，有助於提高思維敏捷性，讓您更容易產生靈感。</li><li><b id="bnu">迷迭香</b> 具有振奮的作用，有助於提高專注力和創造力，讓您更有靈感。</li><li><b id="bnu">香膠冷杉</b> 是一種平靜的香氣，有助於冥想，提高洞察力和智慧。</li><li><b id="bnu">甜橙</b> 帶來愉悅和快樂，有助於提高智慧，讓您更能看清事物的表面。</li><li><b id="bnu">佛手柑</b> 有助於提高創造力，讓您更能發揮潛力。</li><li><b id="bnu">杜松果</b> 具有清潔能量，有助於釋放負面情緒和思維，提高洞察力和創造力。</li></ul><br><br><a href="#" onclick="generateImage(5)"></a>';
+					cc = 'item-six';
+					rotateFunc(100,51.43,'');
+					break;
+				case 3:
+          moneyVal = 100;
+					mm = '四';
+					tt = '心輪';
+					pp = '<p><b>「心輪」</b>主管愛、同情和善良，是情感和靈性平和的脈輪，如果您最近感受冷漠、自私、想不自覺地與他人保持距離，使用我們含五種精油：黑胡椒、甜羅勒、芫荽、香櫞、杜松果的洗髮香波（Shampoo），可以幫助您發展友善、同情心、打造和諧的人際關係與自我接納。</p> <ul><li><b id="bnu">甜橙</b> 具有明亮、愉悅的能量，讓您更容易與他人建立深刻的情感聯繫。</li><li><b id="bnu">香蜂草</b> 能賦予活力，讓您更能與自己和他人建立積極的關係。</li><li><b id="bnu">苦橙葉</b> 是一種舒緩情感波動的香氣，讓您更容易發展平和的情感。</li><li><b id="bnu">天竺葵</b> 帶來潔淨和平衡的能量，能夠幫助您釋放負面情感。</li><li><b id="bnu">沉香木</b> 具有安定情緒的功效，能夠幫助您在感情中維持平和。</li></ul><br><br><a href="#" onclick="generateImage(3)"></a>';
+					cc = 'item-four';
+					rotateFunc(100,102.86,'');
+					break;
+				case 4:
+          moneyVal = 100;
+					mm = '二';
+					tt = '生殖輪';
+					pp = '<p><b>「生殖輪」</b>主管創造力、情感、性慾和人際關係，它象徵著生命的力量和情感的流動。如果您最近感覺對他人冷漠、缺乏情感或是對事物失去好奇心，使用我們含六種精油：貞潔樹、特級依蘭、沉香木、香櫞、玫瑰原精和歐白芷根的洗髮香波（Shampoo），可以幫助您修復愛的關係，重拾正面的情緒、彼此相愛。</p> <ul> <li><b id="bnu">貞潔樹</b> 能提供情感穩定，使您更容易建立深層的關係。</li> <li><b id="bnu">特級依蘭</b> 是一種甜美的香氣，讓您更敞開心扉，享受豐富的情感。</li> <li><b id="bnu">沉香木</b> 具有安定情緒的功效，能夠幫助您在感情中維持平和。</li> <li><b id="bnu">香櫞</b> 帶來清新的能量，可以幫助您釋放壓力，重拾對愛情的熱情。</li> <li><b id="bnu">玫瑰</b> 原精有助於打開心靈，將更多愛帶入您的關係中。</li></ul><br><br><a href="#" onclick="generateImage(1)"></a>';
+					cc = 'item-two';
+					rotateFunc(100,154.29,'');
+					break;
+				case 5:
+          moneyVal = 200;
+					mm = '一';
+					tt = '海底輪';
+					pp = '<p><b>「海底輪」</b>是您身心靈的基石，關聯著您的生存本能和安全感，如果您最近容易感到<b id="bnn">緊張或恐懼</b>，使用我們含五種精油：廣藿香、葡萄柚、真正薰衣草、杜松果和紅桔的洗髮香波（Shampoo），可以幫助您建立穩固的身心基礎，讓您感到堅實的穩定和安全。</p> <ul> <li><b id="bnu">廣藿香</b> 具有穩定情緒、增強自信和提供安全感的功效。</li> <li><b id="bnu">葡萄柚</b> 具有清潔淨化的功效，將不必要的擔憂和緊張情緒排出體外。</li> <li><b id="bnu">真正薰衣草</b> 能夠幫助您放鬆身心，減輕壓力，並提升內在的安全感。</li> <li><b id="bnu">杜松果</b> 能舒緩不適，減緩你的焦躁並提升安全感。</li> <li><b id="bnu">紅桔</b> 代表著活力和熱情，把活力注入您的生活中。</li></ul><br><br><a href="#" onclick="generateImage(0)"></a>';
+					cc = 'item-one';
+					rotateFunc(100,205.71,'');
+					break;
+				case 6:
+					moneyVal = 100;
+					mm = '三';
+					tt = '太陽輪';
+					pp = '<p><b>「太陽輪」</b>太陽輪主管自我價值、自尊心、個人力量和生活目標，如果您最近感受沒自信、凡事被動、失去追夢的勇氣，使用我們含五種精油：黑胡椒、甜羅勒、芫荽、香櫞、杜松果的洗髮香波（Shampoo），可以幫助您提高自尊心、找到自信，重拾力量、繼續朝目標前進。</p> <ul> <li><b id="bnu">黑胡椒</b> 是一種活力之源，幫助增強自信和勇氣，並實現更大的自我價值。</li> <li><b id="bnu">甜羅勒</b> 有恢復精神的功效，能讓您重拾熱情與動力。</li> <li><b id="bnu">芫荽</b> 代表著自我接受，能助您建立對自己的正面態度。</li> <li><b id="bnu">香櫞</b> 的清新能量有助於提升自尊心，讓您感到更有自信。</li> <li><b id="bnu">杜松果</b> 能舒緩不適，能釋放壓力和負面情緒，使您更自信地面對挑戰。</li></ul><br><br><a href="#" onclick="generateImage(2)"></a>';
+					cc = 'item-three';
+					rotateFunc(100,257.14,'');
+					break;
+				case 0:
+          moneyVal = 200;
+					mm = '五';
+					tt = '喉輪';
+					pp = '<p><b>「喉輪」</b>喉輪主管表達、溝通和自我溝通。如果您最近常詞不達意、缺乏表達想法的勇氣，使用我們含七種精油：羅文沙葉、野生茶樹、尤加利、佛手柑、賽普勒斯柑橘、百里香和真正薰衣草的洗髮香波（Shampoo），可以幫助您無障礙地表達思想和情感，通往更真實的自我！</p> <ul> <li><b id="bnu">羅文沙葉</b> 有助於提高表達的清晰度和自信，讓您更自信地表達思想和情感。</li> <li><b id="bnu">野生茶樹</b> 帶有清新的能量，有助於清除腦中的障礙，提高溝通流暢性。</li> <li><b id="bnu">尤加利</b> 是一種充滿活力的香氣，能夠提升專注力，幫助您表達自己。</li> <li><b id="bnu">佛手柑</b> 帶來愉悅和樂觀，有助於減輕壓力，讓您更自信地表達自己。</li> <li><b id="bnu">賽普勒斯柑橘</b> 有助於提高表達能力，讓您更能真實地表現自己。</li></ul><br><br><a href="#" onclick="generateImage(4)"></a>';
+					cc = 'item-five';
+					rotateFunc(100,308.57,'');
+					break;
+				default:
+					// rotateFunc(0,0,'');
+			}
+		});
+
+		var rotateFunc = function(awards,angle,text){  //awards:奖项，angle:奖项对应的角度
+			$plateBtn.stopRotate();
+			$plateBtn.rotate({
+				angle: 0,
+				duration: 5000,
+				animateTo: angle + 1440,  //angle是图片上各奖项对应的角度，1440是让指针固定旋转4圈
+				callback: function() {
+					$resultTxt.html(text);
+					//$result.show();
+					if (moneyVal == -1) {
+						showShare();
+					}
+					else {
+						$('#title_h').text('第' + mm + '輪脈輪 ...');
+						$('#title_t').text(tt);
+						$('#pp-content').html(pp);
+						$('.item').addClass(cc);
+						showPrize();
+					}
+				}
+			});
+		};
+
+		$('#ruleDiv').click(function() {
+			$(this).toggleClass('toggleBackground');
+		});
+
+		$resultBtn.click(function(){
+			$result.hide();
+		});
+	});
+
+  function generateImage(idx) {
+    const result_img = document.querySelectorAll('.result_img img')
+    const result_img_main = document.querySelector('.result_img')
+    result_img_main.style = 'z-index: 100000'
+    result_img[idx].style = 'display: block;'
+  }
+	function closeRule(){
+		var ruleDiv = document.getElementById('rule');
+		ruleDiv.style.display = 'none';
+		var ruleDiv = document.getElementById('mask_rule');
+		ruleDiv.style.display = 'none';
+	}
+	function showRule(){
+		var ruleDiv = document.getElementById('rule');
+		ruleDiv.style.display = 'block';
+		var ruleDiv = document.getElementById('mask_rule');
+		ruleDiv.style.display = 'block';
+	}
+	function closeWin(){
+		var winDiv = document.getElementById('win');
+		winDiv.style.display = 'none';
+		var winDiv = document.getElementById('mask_win');
+		winDiv.style.display = 'none';
+	}
+	function showWin(){
+		var winDiv = document.getElementById('win');
+		winDiv.style.display = 'block';
+		var winDiv = document.getElementById('mask_win');
+		winDiv.style.display = 'block';
+
+		$('#zhongjiangmingdan').html('');
+		$.ajax({
+			type:'get',
+			url:'http://www.rongtoujinrong.com/api/record2.php',
+			dataType:'json',
+			success:function(data){
+				if(data.code==1)
+				{
+					var arr = data.data;
+					for(var i=0;i<arr.length;i++){
+						$('#zhongjiangmingdan').append(arr[i]+'<br/>');
+					}
+
+				}
+			},
+			error:function(){}
+		});
+
+	}
+
+	function closePrize(){
+		var awardsDiv = document.getElementById('awards');
+		awardsDiv.style.display = 'none';
+		var awardsDiv = document.getElementById('mask_awards');
+		awardsDiv.style.display = 'none';
+		$('.item').removeClass(cc);
+    const result_img = document.querySelectorAll('.result_img img')
+    const result_img_main = document.querySelector('.result_img')
+    result_img_main.style = 'z-index: -1'
+    result_img.forEach(item => {
+      item.style = 'display: none';
+    })
+	}
+	function showPrize(){
+		var awardsDiv = document.getElementById('awards');
+		awardsDiv.style.display = 'block';
+		var awardsDiv = document.getElementById('mask_awards');
+		awardsDiv.style.display = 'block';
+	}
+
+	
+
+</script>
+
+</head>
+<body>
+<div style="display: none;">
+  <img src="/images/u16-2.png" alt="">
+  <img src="/images/u16-2b.png" alt="">
+  <img src="/images/活動規則外匡_Page1_Desktop.png" alt="">
+  <img src="/images/活動規則外匡_Page2_Desktop.png" alt="">
+</div>
+<div class="wrap">
+	<div class="projIntro">
+		<dl>
+			<div class="zhuanpan" style="width:100%;height:100vh;margin:0 auto;">
+				<div class="zp-title">
+					<img src="images/title.png" alt="">
+				</div>
+				<div class="main">
+					<div class="choujiang">
+						<div class="plate">
+							<a id="plateBtn" href="javascript:" title="開始測驗"></a>
+						</div>
+						<div id="result">
+							<p id="resultTxt"></p>
+							<a id="resultBtn" href="javascript:" title="關閉">關閉</a>
+						</div>
+					</div>
+					<div class="content">
+						<div id="mask_rule" class="mask" style="display: none" onclick="closeRule()"></div>
+						<div id="rule" style="display: none;">
+							<div id="ruleDiv"></div>
+						</div>
+						<div id="mask_awards" class="mask" style="display: none" onclick="closePrize()"></div>
+						<div id="awards"  style="display: none; margin-top:0;">
+              <section class="result_img">
+                <img style="display: none;" src="./images/結果框_脈輪1.png" alt="">
+                <img style="display: none;" src="./images/結果框_脈輪2.png" alt="">
+                <img style="display: none;" src="./images/結果框_脈輪3.png" alt="">
+                <img style="display: none;" src="./images/結果框_脈輪4.png" alt="">
+                <img style="display: none;" src="./images/結果框_脈輪5.png" alt="">
+                <img style="display: none;" src="./images/結果框_脈輪6.png" alt="">
+                <img style="display: none;" src="./images/結果框_脈輪7.png" alt="">
+              </section>
+							<div class="item" id="item-print">
+								<h3 id="title_h">第一輪脈輪 ...</h3>
+								<h1 id="title_t">海底輪</h1>
+								<hr>
+								<div id="pp-content">
+									<!-- <p><b>「海底輪」</b>是您身心靈的基石，關聯著您的生存本能和安全感，如果您最近容易感到<b id="bnn">緊張或恐懼</b>，使用我們含五種精油：廣藿香、葡萄柚、真正薰衣草、杜松果和紅桔的洗髮香波（Shampoo），可以幫助您建立穩固的身心基礎，讓您感到堅實的穩定和安全。</p>
+									<ul>
+										<li><b id="bnu">廣藿香</b> 具有穩定情緒、增強自信和提供安全感的功效。</li>
+										<li><b id="bnu">葡萄柚</b> 具有清潔淨化的功效，將不必要的擔憂和緊張情緒排出體外。</li>
+										<li><b id="bnu">真正薰衣草</b> 能夠幫助您放鬆身心，減輕壓力，並提升內在的安全感。</li>
+										<li><b id="bnu">杜松果</b> 能舒緩不適，減緩你的焦躁並提升安全感。</li>
+										<li><b id="bnu">紅桔</b> 代表著活力和熱情，把活力注入您的生活中。</li>
+									</ul> -->
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="zp-rule">
+					<a href="javascript:void(0)" onclick="showRule()"><span>點擊了解輪盤測驗</span></a>
+				</div>
+			</div>
+		</dl>
+		<div class="clear"></div>
+	</div>
+</div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
