@@ -290,7 +290,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   right: 0;
   margin: auto;
   display: block;
-  background: url(../images/share1.png) no-repeat;
+  background: url(../images/CTA-0.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
   position: absolute;
@@ -302,7 +302,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #B73030 !important;
 }
 .item-one a{
-  background: url(../images/share1.png) no-repeat;
+  background: url(../images/CTA-0.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -322,7 +322,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #DB7733 !important;
 }
 .item-two a{
-  background: url(../images/share2.png) no-repeat;
+  background: url(../images/CTA-1.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -342,7 +342,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #E5C528 !important;
 }
 .item-three a{
-  background: url(../images/share3.png) no-repeat;
+  background: url(../images/CTA-2.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -362,7 +362,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #448E48 !important;
 }
 .item-four a{
-  background: url(../images/share4.png) no-repeat;
+  background: url(../images/CTA-3.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -382,7 +382,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #1392D8 !important;
 }
 .item-five a{
-  background: url(../images/share5.png) no-repeat;
+  background: url(../images/CTA-4.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -402,7 +402,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #3339A0 !important;
 }
 .item-six a{
-  background: url(../images/share6.png) no-repeat;
+  background: url(../images/CTA-5.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -422,7 +422,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   color: #B23ECE !important;
 }
 .item-seven a{
-  background: url(../images/share7.png) no-repeat;
+  background: url(../images/CTA-6.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
@@ -438,15 +438,16 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 }
 
 .item::after{
-  content: "返回";
+  content: "長按可儲存圖片";
   text-decoration: underline;
   color: white;
   position: absolute;
   bottom: -50px;
-  left: 50%;
-  margin-left: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
   font-size: 26px;
-  width: 60px;
+  width: 200px;
   text-align: center;
   pointer-events: none;
 }
@@ -550,7 +551,8 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 
   .item::after,
   #rule>div::after {
-    content: "返回";
+    content: "右鍵另存下載";
+    width: 300px;
     font-size: 21px;
   }
 
@@ -560,6 +562,10 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 
   .zp-rule {
     margin-top: 30px;
+  }
+
+  .item::after{
+    /* content: "右鍵另存下載"; */
   }
 }
 
@@ -578,15 +584,16 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 }
 
 .result_img::after {
-  content: "返回";
+  content: "長按可儲存圖片";
   text-decoration: underline;
   color: white;
   position: absolute;
   bottom: -50px;
-  left: 50%;
-  margin-left: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
   font-size: 26px;
-  width: 60px;
+  width: 200px;
   text-align: center;
   pointer-events: none;
 }
@@ -604,16 +611,17 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
   }
 
   .result_img::after {
-    content: "返回";
+    content: "右鍵另存下載";
+    width: 200px;
     z-index: 10000;
     text-decoration: underline;
     color: white;
     position: absolute;
     bottom: -50px;
-    left: 50%;
-    margin-left: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 26px;
-    width: 60px;
     text-align: center;
     pointer-events: none;
   }
@@ -646,7 +654,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
     width: 33%;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   #plateBtn {
@@ -702,7 +710,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 
   .item::after,
   #rule>div::after {
-    content: "返回";
+    /* content: "右鍵另存下載"; */
     font-size: 21px;
   }
 
