@@ -551,8 +551,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 
   .item::after,
   #rule>div::after {
-    content: "右鍵另存下載";
-    width: 300px;
+    content: "返回";
     font-size: 21px;
   }
 
