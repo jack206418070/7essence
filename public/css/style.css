@@ -1,7 +1,6 @@
-html {
+html{
   height: 100vh;
 }
-
 .mask {
   position: fixed;
   left: 0;
@@ -14,8 +13,7 @@ html {
   -khtml-opacity: 0.7;
   opacity: 0.7;
 }
-
-#rule>div#ruleDiv {
+#rule > div#ruleDiv{
   width: 90vw;
   height: auto;
   padding-bottom: 144vw;
@@ -25,33 +23,12 @@ html {
   background-size: contain;
   background-position: top;
 }
-
-#rule>div#ruleDiv.toggleBackground {
+#rule > div#ruleDiv.toggleBackground{
   background: url(../images/u16-2b.png) no-repeat;
   background-size: contain;
   background-position: top;
 }
-
-@media (min-width: 680px) {
-  #rule>div#ruleDiv {
-    width: 90vw;
-    height: auto;
-    padding-bottom: 144vw;
-    margin: 10% 5% 0 5%;
-    position: relative;
-    background: url(../images/活動規則外匡_Page1_Desktop.png) no-repeat;
-    background-size: contain;
-    background-position: top;
-  }
-
-  #rule>div#ruleDiv.toggleBackground {
-    background: url(../images/活動規則外匡_Page2_Desktop.png) no-repeat;
-    background-size: contain;
-    background-position: top;
-  }
-}
-
-#rule>div::after {
+#rule > div::after{
   content: "返回";
   text-decoration: underline;
   color: white;
@@ -64,25 +41,21 @@ html {
   text-align: center;
   pointer-events: none;
 }
-
-#rule div h2 {
+#rule div h2{
   color: #fdf44c;
   position: absolute;
   left: 148px;
   top: 119px;
 }
-
 #rule div p {
   font-size: 16px;
   padding: 180px 30px 0 30px;
   color: #ffffcc;
 }
-
-#rule div p span {
+#rule div p span{
   display: inline-block;
   padding: 3px 0;
 }
-
 #win div {
   width: 450px;
   height: 683px;
@@ -91,34 +64,28 @@ html {
   position: relative;
   background: url('../images/u16.png');
 }
-
-#win div h2 {
+#win div h2{
   color: #fdf44c;
   position: absolute;
   left: 148px;
   top: 119px;
 }
-
-#win div p {
+#win div p{
   font-size: 16px;
   color: #fff;
   padding: 180px 10px 0 10px;
 }
-
-#win div p span {
+#win div p span{
   display: inline-block;
   padding: 5px 0;
 }
-
 .a_prize {
   background: url("../images/u31.png");
 }
-
 .a_share {
   background: url("../images/u33.png");
 }
-
-#awards>div {
+#awards > div{
   width: 85vw;
   height: 0;
   padding-bottom: 169vw;
@@ -131,14 +98,12 @@ html {
   text-align: center;
   letter-spacing: 0.05em;
 }
-
 #awards h3 {
   font-size: 32px;
   font-weight: bold;
   color: #000;
   padding: 72px 0 6px 0;
 }
-
 #awards h1 {
   font-size: 46px;
   font-style: italic;
@@ -147,7 +112,6 @@ html {
   padding: 0;
   margin: 0 0 20px 0;
 }
-
 #awards p {
   color: #797E99;
   font-size: 22px;
@@ -157,21 +121,18 @@ html {
   padding: 27px 0;
   text-align: left;
 }
-
 #awards b {
   font-size: 22px;
   font-weight: bold;
   color: black;
   padding: 0;
 }
-
 #awards ul {
   text-align: left;
   padding: 10px 0 0 0;
   color: #797E99;
   line-height: 170%;
 }
-
 #awards li {
   margin-bottom: 12px;
 }
@@ -185,14 +146,12 @@ html {
   top: 142px;
   text-align: center;
 }
-
 #share h3 {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
   padding: 88px 10px 10px 10px;
 }
-
 #share a {
   display: inline-block;
   color: #fff;
@@ -201,20 +160,11 @@ html {
 }
 
 /* 页面 css */
-* {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-h1 {
-  margin: 40px auto;
-  font: 32px "Microsoft Yahei";
-  text-align: center;
-}
+*{margin:0;padding:0;list-style-type:none;}
+h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 
 /* demo css */
-.choujiang {
+.choujiang{
   position: relative;
   margin: 50px auto 0 auto;
   width: 90vw;
@@ -222,15 +172,13 @@ h1 {
   background: url(../images/lottery.png)no-repeat;
   background-size: contain;
 }
-
-.plate {
-  position: relative;
-  float: left;
+.plate{
+  position:relative;
+  float:left;
   width: 100%;
   height: 100%;
 }
-
-.plate::after {
+.plate::after{
   content: "";
   position: absolute;
   width: 220px;
@@ -244,8 +192,7 @@ h1 {
   background-position: center;
   pointer-events: none;
 }
-
-#plateBtn {
+#plateBtn{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -259,66 +206,51 @@ h1 {
   text-indent: -9999px;
   overflow: hidden;
 }
-
-#result {
-  display: none;
-  position: absolute;
-  left: 99px;
-  top: 169px;
-  width: 300px;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.75);
-  filter: alpha(opacity=90);
+#result{
+  display:none;
+  position:absolute;
+  left:99px;
+  top:169px;
+  width:300px;
+  height:120px;
+  background-color:rgba(0,0,0,0.75);
+  filter:alpha(opacity=90);
 }
-
-#result a {
+#result a{
   color: #ff0000;
 }
-
-#resultTxt {
-  padding: 45px 15px 0;
-  font: 16px "Microsoft Yahei";
-  color: #fff;
-  text-align: center;
+#resultTxt{
+  padding:45px 15px 0;
+  font:16px "Microsoft Yahei";
+  color:#fff;
+  text-align:center;
+}
+#resultTxt em{
+  color:#ffea76;
+  font-style:normal;
+}
+#resultBtn{
+  position:absolute;
+  right:5px;
+  top:5px;
+  width:25px;
+  height:25px;
+  text-indent:-100px;
+  background-image:url(../images/close.png);
+  overflow:hidden;
 }
 
-#resultTxt em {
-  color: #ffea76;
-  font-style: normal;
-}
-
-#resultBtn {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  width: 25px;
-  height: 25px;
-  text-indent: -100px;
-  background-image: url(../images/close.png);
-  overflow: hidden;
-}
-
-#musicbtn {
-  float: right;
-  background: url(../images/yinyu.png) no-repeat;
-  width: 44px;
-  height: 44px;
-  display: block;
-  padding-top: 5px
-}
-
-.zp-title img {
+#musicbtn { float:right; background:url(../images/yinyu.png) no-repeat; width:44px; height:44px; display:block; padding-top:5px}
+.zp-title img{
   display: flex;
   margin: 10vh auto 0 auto;
 }
-
-.zp-rule {
+.zp-rule{
   width: 100%;
   display: flex;
   margin-top: 50px;
 }
-
-.zp-rule a {
+.zp-rule a{
   display: flex;
   width: fit-content;
   margin: 0 auto;
@@ -329,21 +261,20 @@ h1 {
   color: #d9d2fa;
   letter-spacing: 0.05em;
 }
-
-#rule {
+#rule{
   position: fixed;
   top: 0px;
 }
-
-#bnn {
+#bnn{
   font-weight: normal;
 }
-
-#bnu {
+#bnu{
   text-decoration: underline;
 }
-
-.item hr {
+#hhu{
+  font-weight: normal !important;
+}
+.item hr{
   width: 60%;
   height: 8px;
   margin-left: 20%;
@@ -352,197 +283,161 @@ h1 {
   background-size: contain;
   background-position: center;
 }
-
-.item a {
+.item a{
   width: 50%;
   height: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: block;
-  background: url(../images/CTA-0.png) no-repeat;
+  background: url(../images/share1.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
   position: absolute;
   bottom: 40px;
-  right: 30px;
-  left: 0;
-  margin: auto;
 }
 
 /*第一輪*/
-.item-one #title_h,
-.item-one #title_t,
-.item-one b {
+.item-one #title_h,.item-one #title_t,.item-one b{
   color: #B73030 !important;
 }
-
-.item-one a {
-  background: url(../images/CTA-0.png) no-repeat;
+.item-one a{
+  background: url(../images/share1.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-one hr {
+.item-one hr{
   background: url(../images/divider1.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-one {
+#awards > div.item-one{
   background: url(../images/result-one.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
 /*第二輪*/
-.item-two #title_h,
-.item-two #title_t,
-.item-two b {
+.item-two #title_h,.item-two #title_t,.item-two b{
   color: #DB7733 !important;
 }
-
-.item-two a {
-  background: url(../images/CTA-1.png) no-repeat;
+.item-two a{
+  background: url(../images/share2.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-two hr {
+.item-two hr{
   background: url(../images/divider2.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-two {
+#awards > div.item-two{
   background: url(../images/result-two.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
 /*第三輪*/
-.item-three #title_h,
-.item-three #title_t,
-.item-three b {
+.item-three #title_h,.item-three #title_t,.item-three b{
   color: #E5C528 !important;
 }
-
-.item-three a {
-  background: url(../images/CTA-2.png) no-repeat;
+.item-three a{
+  background: url(../images/share3.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-three hr {
+.item-three hr{
   background: url(../images/divider3.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-three {
+#awards > div.item-three{
   background: url(../images/result-three.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
 /*第四輪*/
-.item-four #title_h,
-.item-four #title_t,
-.item-four b {
+.item-four #title_h,.item-four #title_t,.item-four b{
   color: #448E48 !important;
 }
-
-.item-four a {
-  background: url(../images/CTA-3.png) no-repeat;
+.item-four a{
+  background: url(../images/share4.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-four hr {
+.item-four hr{
   background: url(../images/divider4.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-four {
+#awards > div.item-four{
   background: url(../images/result-four.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
 /*第五輪*/
-.item-five #title_h,
-.item-five #title_t,
-.item-five b {
+.item-five #title_h,.item-five #title_t,.item-five b{
   color: #1392D8 !important;
 }
-
-.item-five a {
-  background: url(../images/CTA-4.png) no-repeat;
+.item-five a{
+  background: url(../images/share5.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-five hr {
+.item-five hr{
   background: url(../images/divider5.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-five {
+#awards > div.item-five{
   background: url(../images/result-five.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
 /*第六輪*/
-.item-six #title_h,
-.item-six #title_t,
-.item-six b {
+.item-six #title_h,.item-six #title_t,.item-six b{
   color: #3339A0 !important;
 }
-
-.item-six a {
-  background: url(../images/CTA-5.png) no-repeat;
+.item-six a{
+  background: url(../images/share6.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-six hr {
+.item-six hr{
   background: url(../images/divider6.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-six {
+#awards > div.item-six{
   background: url(../images/result-six.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
 /*第七輪*/
-.item-seven #title_h,
-.item-seven #title_t,
-.item-seven b {
+.item-seven #title_h,.item-seven #title_t,.item-seven b{
   color: #B23ECE !important;
 }
-
-.item-seven a {
-  background: url(../images/CTA-6.png) no-repeat;
+.item-seven a{
+  background: url(../images/share7.png) no-repeat;
   background-size: auto 40px;
   background-position: center;
 }
-
-.item-seven hr {
+.item-seven hr{
   background: url(../images/divider7.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-
-#awards>div.item-seven {
+#awards > div.item-seven{
   background: url(../images/result-seven.png) no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
-.item::after {
+.item::after{
   content: "返回";
   text-decoration: underline;
   color: white;
@@ -555,8 +450,7 @@ h1 {
   text-align: center;
   pointer-events: none;
 }
-
-#pp-content {
+#pp-content{
   overflow-y: auto;
   height: 115vw;
   margin: 0 4%;
@@ -722,5 +616,101 @@ h1 {
     width: 60px;
     text-align: center;
     pointer-events: none;
+  }
+
+  .choujiang {
+    width: 90%;
+    height: 0;
+    padding-bottom: 90%;
+    margin: 30px auto 0 auto;
+  }
+
+  #rule>div#ruleDiv {
+    width: 84%;
+    margin: 5% 0 0 8%;
+    padding-bottom: 134%;
+  }
+
+  #awards>div {
+    width: 72%;
+    top: 30px;
+    left: 15%;
+    padding-bottom: 143%;
+  }
+
+  #pp-content {
+    height: 26vw;
+  }
+
+  .wrap {
+    width: 33%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #plateBtn {
+    width: 50%;
+    height: 50%;
+    margin: 0px;
+    top: 25%;
+    left: 25%;
+  }
+
+  .plate {
+    position: absolute;
+  }
+
+  .plate::after {
+    content: "";
+    width: 36%;
+    height: 36%;
+    margin: 0px;
+    top: 32%;
+    left: 31%;
+  }
+
+  #rule {
+    display: block;
+    width: 33%;
+  }
+
+  #awards h3 {
+    font-size: 20px;
+    padding: 48px 0 6px 0;
+  }
+
+  #awards h1 {
+    font-size: 32px;
+    margin: 0 0 9px 0;
+  }
+
+  #awards p {
+    font-size: 14px;
+    padding: 14px 0;
+  }
+
+  #awards b,
+  #awards ul {
+    font-size: 14px;
+  }
+
+  .item a {
+    background-size: auto 26px;
+    bottom: 22px;
+  }
+
+  .item::after,
+  #rule>div::after {
+    content: "返回";
+    font-size: 21px;
+  }
+
+  .zp-title img {
+    width: 80%;
+  }
+
+  .zp-rule {
+    margin-top: 30px;
   }
 }
