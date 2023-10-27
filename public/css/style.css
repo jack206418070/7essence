@@ -438,7 +438,7 @@ h1{margin:40px auto;font:32px "Microsoft Yahei";text-align:center;}
 }
 
 .item::after{
-  content: "長按可儲存圖片";
+  content: "返回";
   text-decoration: underline;
   color: white;
   position: absolute;
